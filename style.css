@@ -8,7 +8,7 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #bebebe;
     margin: 0;
     padding: 0;
 }
@@ -47,7 +47,7 @@ body {
     color: #ff9900;
 }
 
-/* Main Content Styles */
+/* Main Styles */
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -84,7 +84,7 @@ body {
 }
 
 .course button {
-    background-color: #ff9900;
+    background-color: #5f9544;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -95,7 +95,7 @@ body {
 }
 
 .course button:hover {
-    background-color: #ff6600;
+    background-color: #4d7e3d;
 }
 
 /* Footer Styles */
@@ -132,7 +132,7 @@ body {
 }
 
 .footer a:hover {
-    color: #ff9900;
+    color: #ff9900c5;
 }
 
 /* Responsive Styles */
@@ -145,4 +145,139 @@ body {
     .course {
         width: 90%;
     }
+}
+.about-us-content {
+    flex: 1;
+}
+
+.social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Tumpuk */
+    align-items: flex-end;
+}
+
+.social-media a {
+    margin-top: 10px; /* space media sosial */
+    display: inline-block;
+}
+
+/* CSS footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+/* CSS kursus */
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Pindahkan ke baris baru */
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.course {
+    flex: 0 0 calc(33.33% - 20px); /* Lebar kursus */
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.course img {
+    max-width: 100%;
+}
+
+/* CSS header */
+.header {
+    background-color: #E2E2E2;
+    color: #171717; /* Warna teks */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    max-width: 100px; 
+    margin-right: 20px;
+}
+
+.menu-toggle {
+    cursor: pointer; /* Ubah ikon kursor saat ke tombol */
+    display: flex; /* Tampilan fleksibel tombol menu */
+    flex-direction: column; /* Tumpuk elemen dalam tombol menu */
+    align-items: flex-end;
+}
+
+.menu-toggle div {
+    width: 30px; /* Lebar garis pada tombol menu */
+    height: 3px; /* Tinggi garis pada tombol menu */
+    background-color: #171717; /* Warna garis pada tombol menu */
+    margin: 3px 0; /* Ruang antara garis pada tombol menu */
+}
+
+.header-menu {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 60px;
+    right: 10px; 
+    background-color: #666;
+    border: 1px solid #fff; 
+    z-index: 1;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px; 
+}
+
+/* Hover efek untuk menu */
+.header-menu a:hover {
+    background-color: #E2E2E2; /* Warna latar belakang saat dihover */
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav {
+        display: none; /* Sembunyikan navigasi */
+    }
+
+    .menu-toggle {
+        display: flex; /* Tampilkan tombol menu */
+    }
+
+    .header-menu {
+        display: flex; /* Tampilkan menu tiga garis */
+    }
+
+.rounded-button {
+    border: none; 
+    border-radius: 25px; 
+    background-color: #5f9544; 
+    color: #fff;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.rounded-button:hover {
+    background-color: #4d7e3d; 
+}
+
 }
