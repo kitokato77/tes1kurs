@@ -6,122 +6,73 @@
     <title>Kursus Menarik</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Gaya CSS khusus untuk bagian "About Us" */
         .about-us-box {
-            background-color: #3498db; /* Warna latar belakang */
-            color: #fff; /* Warna teks */
-            padding: 20px; /* Ruang dalam */
-            text-align: left; /* Rata kiri */
-            display: flex; /* Menggunakan flexbox */
-            align-items: center; /* Pusatkan vertikal */
-            margin-bottom: 20px; /* Tambahkan margin bawah */
+            background-color: #E2E2E2;
+            color: #171717;
+            padding: 20px; 
+            text-align: left;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
-
-        .about-us-content {
-            flex: 1; /* Ambil sebanyak mungkin ruang yang tersedia */
-        }
-
-        .social-media {
-            flex: 1; /* Ambil sebanyak mungkin ruang yang tersedia */
-            display: flex; /* Menumpuk elemen media sosial */
-            flex-direction: column; /* Tumpuk atas bawah */
-            align-items: flex-end; /* Pusatkan ke kanan */
-        }
-
-        .social-media a {
-            margin-top: 10px; /* Ruang antara ikon media sosial */
-            display: inline-block;
-        }
-
-        /* Gaya CSS untuk footer */
-        .footer {
-            position: fixed; /* Tetapkan posisi */
-            left: 0; /* Tepi kiri */
-            bottom: 0; /* Tepi bawah */
-            width: 100%; /* Lebar 100% */
-            background-color: #333; /* Warna latar belakang */
-            color: #fff; /* Warna teks */
-            text-align: center;
-            padding: 10px 0; /* Ruang dalam */
-        }
-
-        /* Gaya CSS untuk bagian kursus */
-        .main-content {
-            display: flex; /* Menampilkan kursus dalam baris */
-            flex-wrap: wrap; /* Pindahkan ke baris baru jika tidak cukup lebar */
-            justify-content: center; /* Tengahkan horisontal */
-            align-items: flex-start; /* Pusatkan vertikal */
-            margin: 20px; /* Ruang luar */
-        }
-
-        .course {
-            flex: 0 0 calc(33.33% - 20px); /* Lebar kursus */
-            margin: 10px; /* Ruang luar kursus */
-            background-color: #f9f9f9; /* Warna latar belakang kursus */
-            padding: 20px; /* Ruang dalam kursus */
-            border: 1px solid #ddd; /* Garis tepi kursus */
-            text-align: center; /* Tengahkan teks */
-        }
-
-        .course img {
-            max-width: 100%; /* Gambar kursus tidak melebihi lebar kursus */
-        }
+        
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="header-content">
-            <h1>Selamat Datang di Kursus Menarik</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Kursus</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Hubungi Kami</a></li>
-                </ul>
-            </nav>
+        <div class="header-logo">
+            <img src="https://drive.google.com/uc?id=1epqEITRu_4-vVfK7ImftZ7b56FQiQ1pU" alt="Logo">
+            <h1>Jagoan Ngoding</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="header-menu">
+            <a href="https://kitokato77.github.io/tes1kurs/">Beranda</a>
+            <a href="#">Kursus</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Hubungi Kami</a>
         </div>
     </header>
 
     <main class="main-content">
-        <!-- Konten kursus -->
         <section class="course course-left">
-            <img src="course1.jpg" alt="Kursus 1">
-            <h2>Nama Kursus 1</h2>
-            <p>Deskripsi singkat tentang kursus ini. Kursus ini akan membantu Anda belajar...</p>
-            <button>Lihat Detail</button>
+            <img src="https://drive.google.com/uc?export=view&id=1i8Jllj69LICHJJ_0uuZgGPdfLCxHX8Uf" width="100" height="100" alt="Kursus 1">
+            <h2>C/C++ Class</h2>
+            <p>Mempelajari mengenai Basic & Advance dari Bahasa Pemrogramman C/C++.</p>
+            <button class="rounded-button">Lihat Detail</button>
         </section>
 
         <section class="course course-right">
-            <img src="course2.jpg" alt="Kursus 2">
-            <h2>Nama Kursus 2</h2>
-            <p>Deskripsi singkat tentang kursus ini. Kursus ini akan membantu Anda belajar...</p>
-            <button>Lihat Detail</button>
+            <img src="https://drive.google.com/uc?export=view&id=1er-Y843n9yw23zTJ_lRnxaVQgOOXddT7" width="100" height="100" alt="Kursus 2">
+            <h2>Java Class</h2>
+            <p>Mempelajari mengenai Basic & Advance dari Bahasa Pemrogramman Java.</p>
+            <button class="rounded-button">Lihat Detail</button>
         </section>
 
-        <!-- Tiga kursus tambahan -->
         <section class="course course-left">
-            <img src="course3.jpg" alt="Kursus 3">
-            <h2>Nama Kursus 3</h2>
-            <p>Deskripsi singkat tentang kursus ini. Kursus ini akan membantu Anda belajar...</p>
-            <button>Lihat Detail</button>
+            <img src="https://drive.google.com/uc?export=view&id=1MHgh0vbgYZ27VngUXXFk86PpWAqt9PxI" width="100" height="100" alt="Kursus 3">
+            <h2>Javascript Class</h2>
+            <p>Mempelajari mengenai Basic & Advance dari Bahasa Pemrogramman Javascript.</p>
+            <button class="rounded-button">Lihat Detail</button>
         </section>
 
         <section class="course course-right">
-            <img src="course4.jpg" alt="Kursus 4">
-            <h2>Nama Kursus 4</h2>
-            <p>Deskripsi singkat tentang kursus ini. Kursus ini akan membantu Anda belajar...</p>
-            <button>Lihat Detail</button>
+            <img src="https://drive.google.com/uc?export=view&id=1lgbTHX3Gl7tRkEJcloDwKsAS2kBCO0Wf" width="100" height="300" alt="Kursus 4">
+            <h2>PHP Class</h2>
+            <p>Mempelajari mengenai Basic & Advance dari Bahasa Pemrogramman PHP. [Best Seller Class]</p>
+            <button class="rounded-button">Lihat Detail</button>
         </section>
 
         <section class="course course-left">
-            <img src="course5.jpg" alt="Kursus 5">
-            <h2>Nama Kursus 5</h2>
-            <p>Deskripsi singkat tentang kursus ini. Kursus ini akan membantu Anda belajar...</p>
-            <button>Lihat Detail</button>
+            <img src="https://drive.google.com/uc?export=view&id=1QVQ0_jWCsrHD9SGXHyMCc6QW-JJgmkYY" width="100" height="100" alt="Kursus 5">
+            <h2>Python Class</h2>
+            <p>Mempelajari mengenai Basic & Advance dari Bahasa Pemrogramman Python.</p>
+            <button class="rounded-button">Lihat Detail</button>
         </section>
 
-        <!-- Kotak kosong "Coming Soon" -->
         <section class="course course-right">
             <div class="coming-soon">
                 <p>Coming Soon</p>
@@ -129,20 +80,18 @@
         </section>
     </main>
 
-    <!-- Bagian About Us -->
     <section class="about-us-box">
         <div class="about-us-content">
-            <h2>About Us</h2>
-            <p>AMD adalah perusahaan teknologi global yang memimpin revolusi industri teknologi dengan produk-produk canggih yang digunakan oleh jutaan orang di seluruh dunia. Kami berkomitmen untuk menciptakan inovasi yang luar biasa untuk pengalaman komputasi yang lebih baik.</p>
+            <h2>Tentang Kami</h2>
+            <p>Selamat datang di JagoDing (Jagoan Ngoding)! Kami adalah penyedia kursus kodingan yang bertujuan untuk membantu Anda mengembangkan keterampilan pemrograman secara efektif. Seperti Course lain, kami juga memimpin revolusi dalam pembelajaran pemrograman yang lebih baik. Diprakarsai oleh Sir Irham dengan sertifikasi terpercaya.</p>
         </div>
         <div class="social-media">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://drive.google.com/uc?id=1oquDaUyHD4vXJD1jE1j6R_vdiPfrEjJJ" width="25" height="25" alt="Facebook"></a>
+            <a href="https://www.x.com" target="_blank"><img src="https://drive.google.com/uc?id=1toIpKG9vhQvbCFQ6WXbFYm-hIZ4JHl6f" width="25" height="25" alt="X / Twitter"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="https://drive.google.com/uc?id=17fxL_9GHv8i0dLhw-6woaunZytH3sT68" width="25" height="25" alt="LinkedIn"></a>
         </div>
-    </section>
+    </section>    
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2023 Kursus Menarik</p>
@@ -152,5 +101,12 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.header-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
